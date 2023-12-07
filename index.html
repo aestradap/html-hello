@@ -18,25 +18,55 @@
                 <a class="navbar-brand">Instagram</a>
             </div>
             <div class="dropdown">
-                <button type="button" class="btn btn-success text-center" >popup</button>
-                <button 
-                    type="button" 
-                    class="btn btn-secondary dropdown-toggle" 
-                    data-bs-toggle="dropdown" 
-                    aria-expanded="false"
+
+              <button 
+                  type="button"
+                  class="btn btn-success text-center" 
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal">
+                  Create a new post
+              </button>
+               
+              <button 
+                  type="button" 
+                  class="btn btn-secondary dropdown-toggle" 
+                  data-bs-toggle="dropdown" 
+                  aria-expanded="false"
                 >
-                <i class="bi bi-menu-button"></i>
-                </button>
-                <ul class="dropdown-menu me-3">
+                  <i class="bi bi-menu-button"></i>
+              </button>
+
+              <ul class="dropdown-menu me-3">
                     <li><button class="dropdown-item" type="button">Profile</button></li>
                     <li><button class="dropdown-item" type="button">Accesibility</button></li>
                     <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><button class="dropdown-item text-danger" type="button">Log out</button></li>
-                  </ul>
+              </ul>
             </div>
         </div>
       </nav>
+
+  
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="myModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             < ...>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+  
 
 
 
